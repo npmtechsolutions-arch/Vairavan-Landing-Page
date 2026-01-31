@@ -1,0 +1,55 @@
+.final-cta {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.final-cta h2 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.final-cta p {
+  font-size: 18px;
+  margin-bottom: 32px;
+  opacity: 0.95;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.final-cta .btn-primary {
+  background-color: #fff;
+  color: #667eea;
+}
+
+.final-cta .btn-primary:hover {
+  background-color: #f0f0f0;
+}
+
+.final-cta .btn-secondary {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+
+.final-cta .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+  .final-cta h2 {
+    font-size: 42px;
+  }
+
+  .cta-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
