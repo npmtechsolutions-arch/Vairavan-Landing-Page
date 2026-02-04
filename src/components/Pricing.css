@@ -1,12 +1,30 @@
 .pricing {
   background-color: #f9f9f9;
   text-align: center;
+  padding: 80px 20px;
+}
+
+.pricing h2 {
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 48px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pricing-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .pricing-card {
@@ -79,9 +97,116 @@
   border-bottom: none;
 }
 
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #0066ff;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #0052cc;
+  transform: translateY(-2px);
+}
+
 @media (min-width: 768px) {
+  .pricing {
+    padding: 100px 20px;
+  }
+
+  .pricing h2 {
+    font-size: 42px;
+  }
+
   .pricing-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 32px;
   }
+}.pricing-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9fafc;
+}
+
+.pricing-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.pricing-subtitle {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+}
+
+.pricing-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+  margin: 8px 0;
+  color: #444;
+}
+
+.pricing-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.pricing-card button:hover {
+  background: #1e40af;
+}
+
+.featured {
+  border: 2px solid #2563eb;
+  transform: scale(1.05);
 }

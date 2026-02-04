@@ -1,0 +1,304 @@
+/* ========================================
+   ADD PRICE SECTION
+   ======================================== */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.addprice-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  min-height: 100vh;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1e293b;
+  margin: 0 0 12px 0;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* ========================================
+   MESSAGE BANNER
+   ======================================== */
+
+.message-banner {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  padding: 16px 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 15px;
+  animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-banner.success {
+  background: #d1fae5;
+  color: #059669;
+  border-left: 5px solid #10b981;
+}
+
+.message-banner.error {
+  background: #fee2e2;
+  color: #dc2626;
+  border-left: 5px solid #ef4444;
+}
+
+.message-icon {
+  font-size: 22px;
+}
+
+/* ========================================
+   LAYOUT
+   ======================================== */
+
+.addprice-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   FORM CARD
+   ======================================== */
+
+.form-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 30px 0;
+}
+
+.form-grid {
+  display: grid;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.input-wrapper label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #334155;
+  font-size: 15px;
+}
+
+.label-icon {
+  font-size: 18px;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  background: #f8fafc;
+}
+
+.input-wrapper input:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+.input-wrapper input::placeholder {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.update-button {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.update-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+}
+
+.update-button:active {
+  transform: translateY(0);
+}
+
+.button-icon {
+  font-size: 20px;
+}
+
+/* ========================================
+   CURRENT PRICES CARD
+   ======================================== */
+
+.current-prices-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 25px 0;
+}
+
+.prices-display {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  background: #f8fafc;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.price-row:hover {
+  background: #f1f5f9;
+  transform: translateX(5px);
+}
+
+.price-row.featured {
+  background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+  border-color: #a78bfa;
+}
+
+.price-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #334155;
+  font-size: 16px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.basic {
+  background: #3b82f6;
+}
+
+.dot.standard {
+  background: #8b5cf6;
+}
+
+.dot.premium {
+  background: #f59e0b;
+}
+
+.price-value {
+  font-size: 20px;
+  font-weight: 800;
+  color: #667eea;
+}
+
+.info-text {
+  padding: 14px;
+  background: #fef3c7;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #92400e;
+  margin: 0;
+  border-left: 4px solid #f59e0b;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 968px) {
+  .addprice-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .addprice-section {
+    padding: 50px 0;
+  }
+
+  .form-card,
+  .current-prices-card {
+    padding: 30px 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .form-title,
+  .card-title {
+    font-size: 20px;
+  }
+}
